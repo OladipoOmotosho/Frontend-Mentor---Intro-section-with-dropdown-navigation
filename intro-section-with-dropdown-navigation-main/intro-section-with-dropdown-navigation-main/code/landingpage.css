@@ -22,8 +22,9 @@ nav {
   display: flex;
   flex-direction: row;
   list-style: none;
-  grid-gap: 30px;
-  margin: -5px 652px 0px 62px;
+  gap: 30px;
+  margin: -5px 652px 0px 42px;
+  z-index: 1;
 }
 nav a {
   text-decoration: none;
@@ -31,37 +32,103 @@ nav a {
   font-weight: 400;
   color: hsl(0, 0%, 41%);
 }
+nav a:hover {
+  color: #313131;
+  font-weight: 600;
+}
 
-.navIcons {
+#navIcons {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.navIcons a {
+#navIcons a {
   padding-right: 7px;
   flex-wrap: wrap;
+}
+#navIcons:hover {
+  color: #313131;
+  font-weight: 600;
+}
+
+#dropBox {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.icons {
+  display: flex;
+  cursor: pointer;
+}
+
+.icons h4 {
+  color: #828282;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 23px 28px;
+  position: absolute;
+  top: 70px;
+  left: 109px;
+  width: 153px;
+  height: 160px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 8px 0px rgba(210, 208, 208, 0.5),
+    0px 7px 20px 0 rgba(210, 208, 208, 0.5);
+  border-radius: 10px;
+  /* display: none; */
+}
+#dropdown2 {
+  padding: 23px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 70px;
+  left: 294px;
+  width: 117px;
+  height: 127px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 8px 0px rgba(210, 208, 208, 0.5),
+    0px 7px 20px 0 rgba(210, 208, 208, 0.5);
+  border-radius: 10px;
+  /* display: none; */
+}
+
+#dropdown2 h4 {
+  color: #828282;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .navBtn {
   display: flex;
   flex-direction: row;
-  grid-gap: 30px;
+  gap: 30px;
 }
 
 #login {
   border: none;
   background-color: hsl(0, 0%, 98%);
-  color: hsl(0, 0%, 41%);
+  color: #313131;
+  cursor: pointer;
 }
 
 #login:hover {
-  width: 100px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid hsl(0, 0%, 41%);
+  font-weight: 500;
+  cursor: pointer;
+  color: #313131;
 }
 
 #reg {
+  margin-right: -40.12px;
   border: none;
   width: 100px;
   height: 40px;
@@ -69,6 +136,18 @@ nav a {
   background-color: hsl(0, 0%, 98%);
   border: 1px solid hsl(0, 0%, 41%);
   color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+#reg:hover {
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid #313131;
+  color: #313131;
+  cursor: pointer;
 }
 
 #hamMenu {
@@ -84,7 +163,7 @@ nav a {
 .leftSide {
   display: flex;
   flex-direction: column;
-  margin-top: 179px;
+  margin-top: 133px;
   margin-left: 169px;
 }
 .leftSide h1 {
@@ -104,10 +183,23 @@ nav a {
   margin-top: 60px;
   width: 162px;
   padding: 15px 5px;
+  border-radius: 15px;
+  border: 1px solid #4f4f4f;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #000000;
+  cursor: pointer;
+}
+#learn:hover {
+  margin-top: 60px;
+  width: 162px;
+  padding: 15px 5px;
   border-radius: 10px;
   border: 1px solid #4f4f4f;
   color: #000000;
   font-weight: 700;
+  background-color: #fafafa;
+  cursor: pointer;
 }
 
 #img {
@@ -122,8 +214,28 @@ nav a {
 .brands {
   display: flex;
   flex-direction: row;
-  margin-top: 107px;
-  grid-gap: 40px;
+  margin-top: 147px;
+  gap: 40px;
+}
+
+#biz {
+  width: 125px;
+  height: 26px;
+}
+
+#audiophile {
+  width: 73px;
+  height: 37px;
+}
+
+#meet {
+  width: 85px;
+  height: 24px;
+}
+
+#maker {
+  width: 85px;
+  height: 26px;
 }
 
 @media screen and (max-width: 550px) {
@@ -179,7 +291,7 @@ nav a {
   }
   .leftSide p {
     text-align: center;
-    margin-top:33px;
+    margin-top: 33px;
     width: 350px;
     color: #828282;
     font-size: 16px;
@@ -199,9 +311,9 @@ nav a {
   }
 
   .brands {
-  display: flex;
-  flex-direction: row;
-  margin-top: 45px;
-  grid-gap: 40px;
-}
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    gap: 40px;
+  }
 }

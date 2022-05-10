@@ -15,14 +15,42 @@
     <header>
       <img src="../images/logo.svg" alt="logo" />
       <nav class="menu">
-        <span class="navIcons">
+        <span id="navIcons">
           <a href="feature">Feature</a>
-          <img src="../images/icon-arrow-down.svg" alt="logo" />
+          <img src="../images/icon-arrow-down.svg" alt="logo" id="arrowD" />
         </span>
-        <span class="navIcons">
+
+        <span id="navIcons">
           <a href="Company">Company</a>
-          <img src="../images/icon-arrow-down.svg" alt="logo" />
+          <img src="../images/icon-arrow-down.svg" alt="logo" id="arrowD" />
         </span>
+
+        <div id="dropBox">
+          <div id="dropdown">
+            <span class="icons" style="display: flex; flex-direction:row; gap:10px; align-items:center;">
+              <img src="../images/icon-todo.svg" alt="icon" />
+              <h4>Todo List</h4>
+            </span>
+            <span class="icons" style="display: flex; flex-direction:row; gap:10px; align-items:center;">
+              <img src="../images/icon-calendar.svg" alt="icon" />
+              <h4>Calendar</h4>
+            </span>
+            <span class="icons"  style="display: flex; flex-direction:row; gap:10px; align-items:center;">
+              <img src="../images/icon-reminders.svg" alt="icon" />
+              <h4>Reminders</h4>
+            </span>
+            <span class="icons"  style="display: flex; flex-direction:row; gap:10px; align-items:center;">
+              <img src="../images/icon-planning.svg" alt="icon" />
+              <h4>Planning</h4>
+            </span>
+          </div>
+          <div id="dropdown2">
+              <h4>History</h4>
+              <h4>Our Team</h4>
+              <h4>Blog</h4>
+          </div>
+        </div>
+
         <a href="careers"> Careers</a>
         <a href="about"> About</a>
       </nav>
@@ -45,32 +73,19 @@
         </p>
         <button id="learn">Learn more</button>
         <div class="brands">
-          <img
-            src="../images/client-databiz.svg"
-            alt="image"
-            style="width: 125px; height: 26px"
-          />
+          <img src="../images/client-databiz.svg" alt="image" id="biz" />
           <img
             src="../images/client-audiophile.svg"
             alt="image"
-            style="width: 73px; height: 37px"
+            id="audiphile"
           />
-          <img
-            src="../images/client-meet.svg"
-            alt="image"
-            style="width: 85px; height: 24px"
-          />
-          <img
-            src="../images/client-maker.svg"
-            alt="image"
-            style="width: 85px; height: 26px"
-          />
+          <img src="../images/client-meet.svg" alt="image" id="meet" />
+          <img src="../images/client-maker.svg" alt="image" id="maker" />
         </div>
       </div>
       <div class="rightSide">
         <img src="../images/image-hero-desktop.png" alt="image" id="img" />
         <img src="../images/image-hero-mobile.png" alt="image" id="img2" />
-
       </div>
     </div>
 
