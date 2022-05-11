@@ -15,39 +15,75 @@
     <header>
       <img src="../images/logo.svg" alt="logo" />
       <nav class="menu">
-        <span id="navIcons">
-          <a href="feature">Feature</a>
-          <img src="../images/icon-arrow-down.svg" alt="logo" id="arrowD" />
-        </span>
+        <div id="navIcons">
+          <span id="navIcons">
+            <a href="feature">Feature</a>
+            <img src="../images/icon-arrow-down.svg" alt="logo" id="arrowD" />
+          </span>
 
-        <span id="navIcons">
-          <a href="Company">Company</a>
-          <img src="../images/icon-arrow-down.svg" alt="logo" id="arrowD" />
-        </span>
+          <span id="navIcons">
+            <a href="Company">Company</a>
+            <img src="../images/icon-arrow-down.svg" alt="logo" id="arrowD" />
+          </span>
 
-        <div id="dropBox">
-          <div id="dropdown">
-            <span class="icons" style="display: flex; flex-direction:row; gap:10px; align-items:center;">
-              <img src="../images/icon-todo.svg" alt="icon" />
-              <h4>Todo List</h4>
-            </span>
-            <span class="icons" style="display: flex; flex-direction:row; gap:10px; align-items:center;">
-              <img src="../images/icon-calendar.svg" alt="icon" />
-              <h4>Calendar</h4>
-            </span>
-            <span class="icons"  style="display: flex; flex-direction:row; gap:10px; align-items:center;">
-              <img src="../images/icon-reminders.svg" alt="icon" />
-              <h4>Reminders</h4>
-            </span>
-            <span class="icons"  style="display: flex; flex-direction:row; gap:10px; align-items:center;">
-              <img src="../images/icon-planning.svg" alt="icon" />
-              <h4>Planning</h4>
-            </span>
-          </div>
-          <div id="dropdown2">
+          <div id="dropBox">
+            <div class="dropContent">
+              <div id="dropdown">
+                <span
+                  class="icons"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                  "
+                >
+                  <img src="../images/icon-todo.svg" alt="icon" />
+                  <h4>Todo List</h4>
+                </span>
+                <span
+                  class="icons"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                  "
+                >
+                  <img src="../images/icon-calendar.svg" alt="icon" />
+                  <h4>Calendar</h4>
+                </span>
+                <span
+                  class="icons"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                  "
+                >
+                  <img src="../images/icon-reminders.svg" alt="icon" />
+                  <h4>Reminders</h4>
+                </span>
+                <span
+                  class="icons"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                  "
+                >
+                  <img src="../images/icon-planning.svg" alt="icon" />
+                  <h4>Planning</h4>
+                </span>
+              </div>
+            </div>
+            <div id="dropdown2">
               <h4>History</h4>
               <h4>Our Team</h4>
               <h4>Blog</h4>
+            </div>
           </div>
         </div>
 
@@ -61,6 +97,95 @@
       </span>
 
       <span class="hamBurgerM">
+        <div class="overlay">
+          <div class="modal">
+            <span class="closeBtn"> &times; </span>
+            <div class="modalMenu">
+              <span id="modalIcons">
+                <a href="feature" style="margin-right: 20px">Feature</a>
+                <img
+                  src="../images/icon-arrow-down.svg"
+                  alt="logo"
+                  id="arrowD"
+                />
+              </span>
+              <div class="modalContainer1">
+                <div id="modalDropdown">
+                  <span
+                    class="icons"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      gap: 10px;
+                      align-items: center;
+                    "
+                  >
+                    <img src="../images/icon-todo.svg" alt="icon" />
+                    <h4>Todo List</h4>
+                  </span>
+                  <span
+                    class="icons"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      gap: 10px;
+                      align-items: center;
+                    "
+                  >
+                    <img src="../images/icon-calendar.svg" alt="icon" />
+                    <h4>Calendar</h4>
+                  </span>
+                  <span
+                    class="icons"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      gap: 10px;
+                      align-items: center;
+                    "
+                  >
+                    <img src="../images/icon-reminders.svg" alt="icon" />
+                    <h4>Reminders</h4>
+                  </span>
+                  <span
+                    class="icons"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      gap: 10px;
+                      align-items: center;
+                    "
+                  >
+                    <img src="../images/icon-planning.svg" alt="icon" />
+                    <h4>Planning</h4>
+                  </span>
+                </div>
+              </div>
+
+              <span id="modalIcons">
+                <a href="Company" style="margin-right: 9px">Company</a>
+                <img
+                  src="../images/icon-arrow-down.svg"
+                  alt="logo"
+                  id="arrowD"
+                />
+              </span>
+              <div class="modalContainer2">
+                <div id="modalDropdown2">
+                  <h4>History</h4>
+                  <h4>Our Team</h4>
+                  <h4>Blog</h4>
+                </div>
+              </div>
+              <a href="careers"> Careers</a>
+              <a href="about"> About</a>
+            </div>
+            <div class="modalBtn">
+              <button id="mBtn1">Login</button>
+              <button  id="mBtn2">Register</button>
+            </div>
+          </div>
+        </div>
         <img src="../images/icon-menu.svg" alt="menu" id="hamMenu" />
       </span>
     </header>

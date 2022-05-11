@@ -41,6 +41,8 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-right: 30px;
+  /* gap: 30px; */
 }
 #navIcons a {
   padding-right: 7px;
@@ -82,7 +84,6 @@ nav a:hover {
   box-shadow: 0px 5px 8px 0px rgba(210, 208, 208, 0.5),
     0px 7px 20px 0 rgba(210, 208, 208, 0.5);
   border-radius: 10px;
-  /* display: none; */
 }
 #dropdown2 {
   padding: 23px 26px;
@@ -98,7 +99,6 @@ nav a:hover {
   box-shadow: 0px 5px 8px 0px rgba(210, 208, 208, 0.5),
     0px 7px 20px 0 rgba(210, 208, 208, 0.5);
   border-radius: 10px;
-  /* display: none; */
 }
 
 #dropdown2 h4 {
@@ -238,6 +238,114 @@ nav a:hover {
   height: 26px;
 }
 
+.overlay {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  overflow: hidden;
+}
+.modal {
+  /* padding-top: 5%; */
+  position: fixed;
+  top: 0px;
+  left: 40%;
+  width: 60%;
+  height: 140%;
+  background-color: #ffffff;
+  /* overflow: hidden; */
+}
+
+.modalMenu{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 27px;
+  margin-top: -30px;
+}
+.modalMenu a{
+  text-decoration: none;
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modalContainer1{
+  /* display: none; */
+}
+.modalContainer2{
+  /* display: none; */
+}
+
+#modalDropdown{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0px 28px;
+  width: 153px;
+  background-color: #ffffff;
+}
+
+#modalDropdown2{
+ padding: 0px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 117px;
+  background-color: #ffffff;
+}
+
+#modalDropdown2 h4{
+color: #828282;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#arrowD{
+  padding-bottom: 2px;
+}
+
+.closeBtn {
+  position: relative;
+  top: -22px;
+  left: 80%;
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.modalBtn{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#mBtn1{
+  align-self: center;
+  border: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #828282;
+}
+#mBtn2{
+  align-self: center;
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #828282;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #828282;
+  border-radius: 15px;
+}
+
 @media screen and (max-width: 550px) {
   body {
     width: 550px;
@@ -260,6 +368,7 @@ nav a:hover {
 
   #hamMenu {
     display: block;
+    cursor: pointer;
   }
 
   .container {
