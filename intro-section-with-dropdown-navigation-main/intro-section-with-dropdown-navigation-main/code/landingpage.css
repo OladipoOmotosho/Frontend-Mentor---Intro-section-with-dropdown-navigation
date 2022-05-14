@@ -281,7 +281,7 @@ nav a:hover {
   height: 26px;
 }
 
-.overlay {
+#overlay {
   display: none;
   position: fixed;
   z-index: 1;
@@ -324,10 +324,46 @@ nav a:hover {
 }
 
 .modalContainer1 {
-  /* display: none; */
+  display: none;
 }
 .modalContainer2 {
-  /* display: none; */
+  display: none;
+}
+
+.dropContent {
+  display: none;
+}
+#modalIcons1 a:hover{
+  color: #313131;
+  font-weight: 600;
+}
+#modalIcons a:hover{
+  color: #313131;
+  font-weight: 600;
+}
+
+#modalIcons1:hover .modalContainer1 {
+  color: #313131;
+  font-weight: 600;
+  display: block;
+  padding-top: 32px;
+}
+
+#modalIcons1:hover #arrowD {
+  margin-bottom: 3px;
+  transform: rotate(180deg);
+}
+
+#modalIcons:hover .modalContainer2{
+  color: #313131;
+  font-weight: 600;
+  display: block;
+  padding-top: 32px;
+}
+
+#modalIcons:hover #arrowD {
+  margin-bottom: 3px;
+  transform: rotate(180deg);
 }
 
 #modalDropdown {
@@ -364,12 +400,13 @@ nav a:hover {
   display: block;
 }
 
-.closeBtn {
+#closeBtn {
   position: relative;
   top: -22px;
   left: 80%;
   font-size: 100px;
   font-weight: 200;
+  cursor: pointer;
 }
 
 .modalBtn {
@@ -420,6 +457,10 @@ nav a:hover {
 
   #hamMenu {
     display: block;
+    cursor: pointer;
+  }
+
+  #closeBtn {
     cursor: pointer;
   }
 
