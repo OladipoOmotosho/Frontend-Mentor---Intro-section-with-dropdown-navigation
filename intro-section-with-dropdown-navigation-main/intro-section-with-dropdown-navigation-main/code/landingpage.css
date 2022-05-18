@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
+  height: auto;
 }
 
 body {
   background-color: #fafafa;
   width: 1440px;
-  height: 900px;
+  height:900px ;
 }
 
 header {
@@ -259,6 +260,7 @@ nav a:hover {
   flex-direction: row;
   margin-top: 147px;
   gap: 40px;
+
 }
 
 #biz {
